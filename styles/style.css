@@ -1,0 +1,224 @@
+@charset "UTF-8";
+body, h1, h2, button, ul, li, dl, dt, dd, p, a, footer, address {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+address {
+  font-style: normal;
+}
+
+/* screen out */
+.screen_out {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.main {
+  padding: 86px 0 135px;
+}
+
+.cinema {
+  padding: 41px 28px 31px 29px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1060px;
+  background-color: #F2F2F2;
+  border: 2px solid #BDBDBD;
+  border-radius: 15px;
+}
+
+.cinema .cinema__title {
+  padding-bottom: 37px;
+  margin: 0 auto 28px;
+  display: block;
+  width: 650px;
+  text-align: center;
+  border-bottom: 2px solid #BDBDBD;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166666666666667;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cinema .cinema__nav {
+  margin-bottom: 28px;
+}
+
+.cinema .cinema__nav .cinema__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.cinema .cinema__nav .cinema__category .cinema__category-list {
+  float: left;
+}
+
+.cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type {
+  color: #828282;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 1.1875;
+}
+
+.cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type--clicked {
+  color: #000;
+  font-weight: 900;
+}
+
+.cinema .cinema__nav .cinema__category .cinema__category-list + li {
+  margin-left: 60px;
+}
+
+.movie {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.movie .movie__title {
+  clear: left;
+}
+
+.movie .movie__list {
+  padding: 26px 27px 30px;
+  background-color: #fff;
+  border: 2px solid #BDBDBD;
+  border-radius: 15px;
+}
+
+.movie .movie__list .movie__item {
+  width: 220px;
+  overflow: hidden;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+}
+
+.movie .movie__list .movie__item .movie__info {
+  padding: 19px 20px 18px;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__img {
+  margin-bottom: 11px;
+  width: 180px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.movie .movie__list .movie__item .movie__info .movie__name {
+  margin-bottom: 12px;
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.4375;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.461538461538462;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-term {
+  margin-right: 5px;
+  color: #828282;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.461538461538462;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail {
+  color: #000;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail .movie--rating::before {
+  margin-right: 4px;
+  content: url("../images/별점이미지.png");
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list:last-child {
+  margin: 0;
+}
+
+.movie .movie__list .movie__item .movie__info .movie__description .movie__gathering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie .movie__list .movie__item .movie__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 41px;
+  border-top: 1px solid #BDBDBD;
+}
+
+.movie .movie__list .movie__item .movie__buttons .movie__book-button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #BDBDBD;
+  text-align: center;
+}
+
+.movie .movie__list .movie__item .movie__buttons .movie__trailer-button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 50%;
+}
+
+.footer {
+  background-color: #F2F2F2;
+}
+/*# sourceMappingURL=style.css.map */
