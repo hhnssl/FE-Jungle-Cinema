@@ -1,11 +1,7 @@
-@import "_reset";
-@import "_fonts";
-@import "_footer";
+@import "reset";
+@import "fonts";
+@import "footer";
 
-// *{
-//   font-family: 'Roboto', sans-serif;
-//   font-family: 'Noto Sans KR', sans-serif;
-// }
 
 /* screen out */
 .screen_out{
@@ -242,6 +238,13 @@
             background-repeat: no-repeat;
           }
         }
+      }
+
+      .movie__item:nth-child(5),
+      .movie__item:nth-child(6),
+      .movie__item:nth-child(7),
+      .movie__item:nth-child(8){
+        margin-bottom: 0;
       }
     }
   }

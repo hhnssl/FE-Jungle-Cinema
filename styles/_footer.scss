@@ -2,15 +2,19 @@
 
 // https://velog.io/@gomiseki/footer-%ED%95%98%EB%8B%A8-%EA%B3%A0%EC%A0%95
 .footer{
+  padding-top: 53px;
   width: 100%;
   background-color: #F2F2F2;
 
   .footer__wrapper{
     padding: 0 366px;
     .footer__title{
+      margin-bottom: 36px;
+      padding-bottom: 42px;
       display: flex;
       justify-content: space-between;
-
+      
+      border-bottom: 1px solid #C4C4C4;
       
 
       .footer__company{
@@ -33,7 +37,13 @@
 
     .footer__info{
       .footer__info-content{
+        display: flex;
+        @include font-notoKR(#000000, 40, 14px, 20px);
 
+        .footer__info-content > li{
+          margin-right: 50px;
+          background-color: red;
+        }
       }
     }
   }
