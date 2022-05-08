@@ -34,12 +34,40 @@ address {
   background-color: #F2F2F2;
 }
 
+.footer .footer__wrapper {
+  padding: 0 366px;
+}
+
+.footer .footer__wrapper .footer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer .footer__wrapper .footer__title .footer__company {
   font-family: 'Roboto', sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
+}
+
+.footer .footer__wrapper .footer__title .footer__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__wrapper .footer__title .footer__sns .footer__sns-icon {
+  margin-left: 25px;
+}
+
+.footer .footer__wrapper .footer__title .footer__sns .footer__sns-icon img {
+  width: 24px;
+  height: 24px;
 }
 
 /* screen out */

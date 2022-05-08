@@ -6,18 +6,35 @@
   background-color: #F2F2F2;
 
   .footer__wrapper{
+    padding: 0 366px;
     .footer__title{
+      display: flex;
+      justify-content: space-between;
+
+      
+
       .footer__company{
         @include font-roboto(#000000, 700, 22px, 26px);
       }
 
       .footer__sns{
+        display: flex;
+        .footer__sns-icon {
+          margin-left: 25px;
+          // float: right;
+        }
+        .footer__sns-icon img{
+          width: 24px;
+          height: 24px;
+        }
 
       }
     }
 
     .footer__info{
-      
+      .footer__info-content{
+
+      }
     }
   }
 }
