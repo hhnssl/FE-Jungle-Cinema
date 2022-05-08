@@ -1,0 +1,23 @@
+@import "fonts";
+
+// https://velog.io/@gomiseki/footer-%ED%95%98%EB%8B%A8-%EA%B3%A0%EC%A0%95
+.footer{
+  width: 100%;
+  background-color: #F2F2F2;
+
+  .footer__wrapper{
+    .footer__title{
+      .footer__company{
+        @include font-roboto(#000000, 700, 22px, 26px);
+      }
+
+      .footer__sns{
+
+      }
+    }
+
+    .footer__info{
+      
+    }
+  }
+}

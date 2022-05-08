@@ -9,6 +9,7 @@ body, h1, h2, button, ul, li, dl, dt, dd, p, a, footer, address {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
@@ -24,6 +25,23 @@ address {
   font-style: normal;
 }
 
+/* color */
+/* Mixin */
+/* color */
+/* Mixin */
+.footer {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.footer .footer__wrapper .footer__title .footer__company {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
 /* screen out */
 .screen_out {
   border: 0;
@@ -36,11 +54,16 @@ address {
   width: 1px;
 }
 
+/* main 시작 */
 .main {
   padding: 86px 0 135px;
+  /* cinema 시작 */
+  /* cinema 끝 */
+  /* movie 시작*/
+  /* movie 시작*/
 }
 
-.cinema {
+.main .cinema {
   padding: 41px 28px 31px 29px;
   margin: 0 auto;
   width: 100%;
@@ -48,9 +71,10 @@ address {
   background-color: #F2F2F2;
   border: 2px solid #BDBDBD;
   border-radius: 15px;
+  /* cinema__nav 시작 */
 }
 
-.cinema .cinema__title {
+.main .cinema .cinema__title {
   padding-bottom: 37px;
   margin: 0 auto 28px;
   display: block;
@@ -63,11 +87,20 @@ address {
   font-family: 'Roboto', sans-serif;
 }
 
-.cinema .cinema__nav {
+.main .cinema .cinema__title::after {
+  content: " ";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background-color: #BDBDBD;
+}
+
+.main .cinema .cinema__nav {
   margin-bottom: 28px;
 }
 
-.cinema .cinema__nav .cinema__category {
+.main .cinema .cinema__nav .cinema__category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,62 +110,76 @@ address {
   overflow: hidden;
 }
 
-.cinema .cinema__nav .cinema__category .cinema__category-list {
+.main .cinema .cinema__nav .cinema__category .cinema__category-list {
   float: left;
 }
 
-.cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type {
-  color: #828282;
+.main .cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type {
   font-family: 'Roboto', sans-serif;
+  color: #828282;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 500px;
-  line-height: 1.1875;
+  line-height: 19px;
 }
 
-.cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type--clicked {
+.main .cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type--clicked {
   color: #000;
   font-weight: 900;
 }
 
-.cinema .cinema__nav .cinema__category .cinema__category-list + li {
+.main .cinema .cinema__nav .cinema__category .cinema__category-list + li {
   margin-left: 60px;
 }
 
-.movie {
+.main .movie {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.movie .movie__title {
+.main .movie .movie__title {
   clear: left;
 }
 
-.movie .movie__list {
+.main .movie .movie__list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 26px 27px 30px;
   background-color: #fff;
   border: 2px solid #BDBDBD;
   border-radius: 15px;
 }
 
-.movie .movie__list .movie__item {
+.main .movie .movie__list .movie__item {
+  margin-bottom: 24px;
   width: 220px;
   overflow: hidden;
   border: 1px solid #BDBDBD;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-.movie .movie__list .movie__item .movie__info {
+.main .movie .movie__list .movie__item .movie__info {
   padding: 19px 20px 18px;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__img {
+.main .movie .movie__list .movie__item .movie__info .movie__img {
   margin-bottom: 11px;
   width: 180px;
+  height: 250px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.movie .movie__list .movie__item .movie__info .movie__name {
+.main .movie .movie__list .movie__item .movie__info .movie__name {
   margin-bottom: 12px;
   display: block;
   font-size: 16px;
@@ -140,7 +187,7 @@ address {
   line-height: 1.4375;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description {
+.main .movie .movie__list .movie__item .movie__info .movie__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +197,7 @@ address {
           flex-direction: column;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list {
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +208,7 @@ address {
   line-height: 1.461538461538462;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-term {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-term {
   margin-right: 5px;
   color: #828282;
   font-size: 13px;
@@ -169,20 +216,27 @@ address {
   line-height: 1.461538461538462;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail {
   color: #000;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail .movie--rating::before {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie--rating::before {
   margin-right: 4px;
-  content: url("../images/별점이미지.png");
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/별점이미지.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__description-list:last-child {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list:last-child {
   margin: 0;
 }
 
-.movie .movie__list .movie__item .movie__info .movie__description .movie__gathering {
+.main .movie .movie__list .movie__item .movie__info .movie__description .movie__gathering {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +245,7 @@ address {
           justify-content: space-between;
 }
 
-.movie .movie__list .movie__item .movie__buttons {
+.main .movie .movie__list .movie__item .movie__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +255,7 @@ address {
   border-top: 1px solid #BDBDBD;
 }
 
-.movie .movie__list .movie__item .movie__buttons .movie__book-button {
+.main .movie .movie__list .movie__item .movie__buttons .movie__book-button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -209,16 +263,34 @@ address {
   height: 100%;
   border-right: 1px solid #BDBDBD;
   text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571428571429;
 }
 
-.movie .movie__list .movie__item .movie__buttons .movie__trailer-button {
+.main .movie .movie__list .movie__item .movie__buttons .movie__trailer-button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 50%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.428571428571429;
 }
 
-.footer {
-  background-color: #F2F2F2;
+.main .movie .movie__list .movie__item .movie__buttons .movie__trailer-button::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: center;
+  background-image: url("../images/아이콘_재생.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+/* main 끝 */
 /*# sourceMappingURL=style.css.map */
