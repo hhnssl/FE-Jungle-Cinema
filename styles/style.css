@@ -95,10 +95,6 @@ address {
   font-weight: 400;
 }
 
-.footer .footer__wrapper .footer__info .footer__info-content .footer__info-name {
-  font-weight: 700;
-}
-
 /* screen out */
 .screen_out {
   border: 0;
