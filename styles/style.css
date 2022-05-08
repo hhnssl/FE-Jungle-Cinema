@@ -25,18 +25,15 @@ address {
   font-style: normal;
 }
 
-/* color */
-/* Mixin */
-/* color */
 /* Mixin */
 .footer {
-  padding-top: 53px;
+  padding: 53px 0 38px;
   width: 100%;
   background-color: #F2F2F2;
 }
 
 .footer .footer__wrapper {
-  padding: 0 366px;
+  padding: 0 100px;
 }
 
 .footer .footer__wrapper .footer__title {
@@ -56,7 +53,7 @@ address {
   color: #000000;
   font-weight: 700;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18182;
 }
 
 .footer .footer__wrapper .footer__title .footer__sns {
@@ -74,20 +71,32 @@ address {
   height: 24px;
 }
 
+.footer .footer__wrapper .footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #4F4F4F;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
 .footer .footer__wrapper .footer__info .footer__info-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #000000;
-  font-weight: 40;
-  font-size: 14px;
-  line-height: 20px;
 }
 
-.footer .footer__wrapper .footer__info .footer__info-content .footer__info-content > li {
-  margin-right: 50px;
-  background-color: red;
+.footer .footer__wrapper .footer__info .footer__info-content span {
+  font-weight: 400;
+}
+
+.footer .footer__wrapper .footer__info .footer__info-content .footer__info-name {
+  font-weight: 700;
 }
 
 /* screen out */
@@ -108,7 +117,7 @@ address {
   /* cinema 시작 */
   /* cinema 끝 */
   /* movie 시작*/
-  /* movie 시작*/
+  /* movie 끝*/
 }
 
 .main .cinema {
@@ -129,10 +138,11 @@ address {
   width: 650px;
   text-align: center;
   border-bottom: 2px solid #BDBDBD;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.166666666666667;
-  font-family: 'Roboto', sans-serif;
+  line-height: 1.16667;
 }
 
 .main .cinema .cinema__title::after {
@@ -167,7 +177,7 @@ address {
   color: #828282;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875;
 }
 
 .main .cinema .cinema__nav .cinema__category .cinema__category-list .cinema__type--clicked {
@@ -251,24 +261,19 @@ address {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.461538461538462;
-}
-
-.main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-term {
-  margin-right: 5px;
   color: #828282;
-  font-size: 13px;
   font-weight: 400;
-  line-height: 1.461538461538462;
+  font-size: 13px;
+  line-height: 1.46154;
 }
 
 .main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie__info-detail {
+  margin-left: 5px;
   color: #000;
 }
 
 .main .movie .movie__list .movie__item .movie__info .movie__description .movie__description-list .movie--rating::before {
+  vertical-align: -1px;
   margin-right: 4px;
   content: '';
   display: inline-block;
@@ -312,9 +317,10 @@ address {
   border-right: 1px solid #BDBDBD;
   text-align: center;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
+  color: #000;
   font-weight: 500;
-  line-height: 1.428571428571429;
+  font-size: 14px;
+  line-height: 1.42857;
 }
 
 .main .movie .movie__list .movie__item .movie__buttons .movie__trailer-button {
@@ -323,17 +329,19 @@ address {
           flex-grow: 1;
   width: 50%;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
+  color: #000;
   font-weight: 500;
-  line-height: 1.428571428571429;
+  font-size: 14px;
+  line-height: 1.42857;
 }
 
 .main .movie .movie__list .movie__item .movie__buttons .movie__trailer-button::before {
+  margin-right: 3px;
   content: '';
   display: inline-block;
   width: 16px;
   height: 16px;
-  vertical-align: center;
+  vertical-align: -2px;
   background-image: url("../images/아이콘_재생.png");
   background-size: contain;
   background-position: center;

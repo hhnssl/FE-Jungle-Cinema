@@ -1,20 +1,10 @@
-/* color */
-// $black: #000;
-// $gray2: #4F4F4F;
-// $gray3: #828282;
-
-
-// 폰트 외 색깔.. 흠 무시하자 얘네는 그냥 각자 넣어줄래
-// $gray4: #BDBDBD;
-// $gray6: #F2F2F2;
-
 /* Mixin */
 @mixin font-roboto($color, $weight, $size, $line-height) {
   font-family: 'Roboto', sans-serif;
   color: $color;
   font-weight: $weight;
   font-size: $size;
-  line-height: $line-height;
+  line-height: ($line-height / $size);
 }
 
 @mixin font-notoKR($color, $weight, $size, $line-height) {
@@ -22,5 +12,5 @@
   color: $color;
   font-weight: $weight;
   font-size: $size;
-  line-height: $line-height;
+  line-height: ($line-height / $size);
 }

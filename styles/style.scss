@@ -38,11 +38,8 @@
       
       text-align: center;
       border-bottom: 2px solid #BDBDBD;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.166666666666667;
-  
-      font-family: 'Roboto', sans-serif;
+
+      @include font-roboto(#000, 700, 24px, 28px);
     }
   
     .cinema__title::after{
@@ -57,7 +54,6 @@
     .cinema__nav{
       margin-bottom: 28px;
 
-      // overflow: hidden;
       .cinema__category{
         display: flex;
         justify-content: center;
@@ -70,7 +66,6 @@
             @include font-roboto(#828282, 500, 16px, 19px);
           }
           .cinema__type--clicked{
-            // BEM Mixins modifier 검색해 볼 것
             color: #000;
             font-weight: 900;
           }
@@ -81,11 +76,8 @@
       }
     }
     // /* cinema__nav 끝 */
-
   }
   /* cinema 끝 */
-
-  // 폰트를 어떠케 해야될지 모르게서.. 일괄적으로 주고싶은데 안먹혀. 버튼같은 경우는 상속 안받으니까 일일이 부여하는 게 맞나? 리셋에서 적용시키는 게 아니라?
 
   /* movie 시작*/
   .movie {
@@ -96,8 +88,6 @@
     }
 
     .movie__list{
-      // margin-bottom: -24px;
-
       justify-content: space-between;
       align-content: space-between;
 
@@ -111,9 +101,6 @@
 
       .movie__item{
         margin-bottom: 24px;
-        // 익스 지원을 위해서 gap을 사용안했는데 4번째 6번째 자식을 선택해서 해결하는 수밖에 없나?
-        // margin-right: 23px;
-
         width: 220px;
         overflow: hidden;
 
@@ -138,6 +125,7 @@
             font-size: 16px;
             font-weight: 900;
             line-height: 1.4375;
+            
           }
 
           .movie__description{
@@ -148,31 +136,21 @@
             .movie__description-list{
               margin-bottom: 5px;
               display: flex;
-
-              font-family: 'Noto Sans KR', sans-serif;
-              font-size: 13px;
-              font-weight: 400;
-              line-height: 1.461538461538462;
-
-              .movie__info-term{
-                margin-right: 5px;
-                // float: left;
-                color: #828282;
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 1.461538461538462;
-              }
+              @include font-notoKR(#828282, 400, 13px, 19px);
       
               .movie__info-detail{
+                margin-left: 5px;
                 color: #000;    
               }
 
               .movie--rating::before{
+                vertical-align: -1px;
                 margin-right: 4px;
                 content: '';
                 display: inline-block;
                 width: 14px;
                 height:14px;
+                
                 background-image: url('../images/별점이미지.png');
                 background-position: center;
                 background-size: contain;
@@ -199,39 +177,29 @@
           width: 100%;
           height: 41px;
           border-top: 1px solid #BDBDBD ;
-
-          // 이렇게 한줄만 있는 것도 라인하이트 적용해야하나?
           .movie__book-button{
             flex-grow: 1;
             width: 50%;
-
             height: 100%;
             border-right: 1px solid #BDBDBD ;
             text-align: center;
-
-            font-family: 'Noto Sans KR', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.428571428571429;
+            @include font-notoKR(#000, 500, 14px, 20px);
           }
 
           .movie__trailer-button{
             flex-grow: 1; 
             width: 50%;
-
-            font-family: 'Noto Sans KR', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.428571428571429;
+            @include font-notoKR(#000, 500, 14px, 20px);
           }
 
           .movie__trailer-button::before{
+            margin-right: 3px;
             content: '';
-            // float: left;
             display: inline-block;
             width: 16px;
             height: 16px;
-            vertical-align: center;
+            vertical-align: -2px;
+            
             background-image: url('../images/아이콘_재생.png');
             background-size: contain;
             background-position: center;
@@ -248,9 +216,6 @@
       }
     }
   }
-  /* movie 시작*/
-
-  
-
+  /* movie 끝*/
 }
 /* main 끝 */
