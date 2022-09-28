@@ -1,0 +1,50 @@
+[
+  {
+    "poster": "./assets/images/포스터_눈떠보니자바.png",
+    "title": "눈 떠보니 코딩테스트 전날 with 자바",
+    "overview": "스릴러",
+    "release": "2021.04.01",
+    "cast": "자바독, 개리씨, 빙키",
+    "rate": "8.25"
+  },
+  {
+    "poster": "./assets/images/포스터_부트캠프.jpg",
+    "title": "파이썬 부트캠프",
+    "overview": "드라마",
+    "release": "2021.04.12",
+    "cast": "캣, 파이, 썬, 뮤라",
+    "rate": "8.77"
+  },
+  {
+    "poster": "./assets/images/포스터_눈떠보니자바.png",
+    "title": "눈 떠보니 코딩테스트 전날 with 자바",
+    "overview": "스릴러",
+    "release": "2021.04.01",
+    "cast": "자바독, 개리씨, 빙키",
+    "rate": "8.25"
+  },
+  {
+    "poster": "./assets/images/포스터_부트캠프.jpg",
+    "title": "파이썬 부트캠프",
+    "overview": "드라마",
+    "release": "2021.04.12",
+    "cast": "캣, 파이, 썬, 뮤라",
+    "rate": "8.77"
+  },
+  {
+    "poster": "./assets/images/포스터_눈떠보니자바.png",
+    "title": "눈 떠보니 코딩테스트 전날 with 자바",
+    "overview": "스릴러",
+    "release": "2021.04.01",
+    "cast": "자바독, 개리씨, 빙키",
+    "rate": "8.25"
+  },
+  {
+    "poster": "./assets/images/포스터_부트캠프.jpg",
+    "title": "파이썬 부트캠프",
+    "overview": "드라마",
+    "release": "2021.04.12",
+    "cast": "캣, 파이, 썬, 뮤라",
+    "rate": "8.77"
+  }
+]

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import './reset.css';
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.hidden {
+  overflow: hidden;
+  border: 0;
+  position: relative;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.layout-wrapper {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+.main {
+  padding: 41px 29px 31px;
+  background-color: #f2f2f2;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 15px;
+}
+.main .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.main .title::after {
+  margin: 37px auto 0;
+  display: block;
+  max-width: 650px;
+  content: "";
+  text-align: center;
+  border-bottom: 2px solid #bdbdbd;
+}
+.main .cinema__nav {
+  margin-top: 28px;
+}
+.main .cinema__nav .nav__list {
+  margin: 0 345px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .cinema__nav .nav__list .nav__link {
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.main .cinema__nav .nav__list .nav__link.nav__selected {
+  color: #000;
+  font-weight: 900;
+}
+.main .moive__container {
+  padding: 26px 27px 30px;
+  margin-top: 28px;
+  background-color: #fff;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 15px;
+}
+.main .moive__container .movie__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.main .moive__container .movie__list .moive__item {
+  flex: 1 1 calc(25% - 2.8rem);
+  border-radius: 15px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.main .moive__container .movie__list .moive__item .movie__container {
+  padding: 19px 20px 0;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__poster {
+  margin-bottom: 11px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 23px;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__details {
+  margin: 12px 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__details .details__key {
+  margin-bottom: 5px;
+  flex: 1 0 50%;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #828282;
+  white-space: nowrap;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__details .details__key:nth-child(2) {
+  text-align: right;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__details .details__key .details__value {
+  margin-left: 5px;
+  color: #000000;
+}
+.main .moive__container .movie__list .moive__item .movie__container .movie__details .details__key .details__value.rating-img::before {
+  margin-right: 4px;
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("./assets/images/별점이미지.png") no-repeat 0px 0px;
+  vertical-align: middle;
+}
+.main .moive__container .movie__list .moive__item .movie__btn {
+  display: flex;
+  width: 100%;
+}
+.main .moive__container .movie__list .moive__item .movie__btn .movie__booking-btn,
+.main .moive__container .movie__list .moive__item .movie__btn .movie__preview_btn {
+  padding: 9px 0 12px;
+  flex: 1 0 auto;
+  background-color: red;
+  height: 100%;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #bdbdbd;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.main .moive__container .movie__list .moive__item .movie__btn .movie__booking-btn {
+  border-right: 1px solid #bdbdbd;
+}
+.main .moive__container .movie__list .moive__item .movie__btn .movie__preview_btn::before {
+  margin-right: 4px;
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("./assets/images/아이콘_재생.png") no-repeat 0px 0px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-top: -2px;
+}/*# sourceMappingURL=style.css.map */
