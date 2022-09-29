@@ -8,43 +8,59 @@
     "rate": "8.25"
   },
   {
-    "poster": "./assets/images/포스터_부트캠프.jpg",
-    "title": "파이썬 부트캠프",
-    "overview": "드라마",
-    "release": "2021.04.12",
-    "cast": "캣, 파이, 썬, 뮤라",
-    "rate": "8.77"
+    "poster": "./assets/images/포스터_파이큐티.png",
+    "title": "파이큐티의 사랑",
+    "overview": "로맨스",
+    "release": "2021.04.08",
+    "cast": "파이썬, 큐티",
+    "rate": "8.81"
   },
   {
-    "poster": "./assets/images/포스터_눈떠보니자바.png",
-    "title": "눈 떠보니 코딩테스트 전날 with 자바",
+    "poster": "./assets/images/포스터_MBIT1.png",
+    "title": "MBIT는 내 운명 1",
     "overview": "스릴러",
-    "release": "2021.04.01",
+    "release": "2021.04.12",
     "cast": "자바독, 개리씨, 빙키",
-    "rate": "8.25"
+    "rate": "9.25"
   },
   {
     "poster": "./assets/images/포스터_부트캠프.jpg",
     "title": "파이썬 부트캠프",
     "overview": "드라마",
-    "release": "2021.04.12",
+    "release": "2021.04.13",
     "cast": "캣, 파이, 썬, 뮤라",
     "rate": "8.77"
   },
   {
-    "poster": "./assets/images/포스터_눈떠보니자바.png",
-    "title": "눈 떠보니 코딩테스트 전날 with 자바",
-    "overview": "스릴러",
-    "release": "2021.04.01",
-    "cast": "자바독, 개리씨, 빙키",
-    "rate": "8.25"
-  },
-  {
-    "poster": "./assets/images/포스터_부트캠프.jpg",
-    "title": "파이썬 부트캠프",
+    "poster": "./assets/images/포스터_앤진액스.png",
+    "title": "NGINX의 춤",
     "overview": "드라마",
-    "release": "2021.04.12",
-    "cast": "캣, 파이, 썬, 뮤라",
-    "rate": "8.77"
+    "release": "2021.04.15",
+    "cast": "NGINX, 노션",
+    "rate": "8.44"
+  },
+  {
+    "poster": "./assets/images/포스터_어쩌다밋업.png",
+    "title": "어쩌다 밋업",
+    "overview": "드라마",
+    "release": "2021.04.7",
+    "cast": "라이캣, 자바독, 소울곰",
+    "rate": "7.77"
+  },
+  {
+    "poster": "./assets/images/포스터_위니브월드.png",
+    "title": "위니브 월드 : 새로운 시대",
+    "overview": "판타지",
+    "release": "2021.04.6",
+    "cast": "라이캣, 소울곰, 개리씨",
+    "rate": "9.77"
+  },
+  {
+    "poster": "./assets/images/포스터_파이게임.jpg",
+    "title": "파이게임 어드벤처",
+    "overview": "판타지액션",
+    "release": "2021.04.14",
+    "cast": "개리씨, 파이썬",
+    "rate": "8.33"
   }
 ]
