@@ -83,6 +83,8 @@
       gap: 1.4rem;
 
       .moive__item {
+        position: relative;
+
         flex: 1 1 calc(25% - 2.8rem);
         border-radius: 15px;
         border: 1px solid #bdbdbd;
@@ -90,7 +92,8 @@
         overflow: hidden;
 
         .movie__container {
-          padding: 19px 20px 0;
+          min-width: 0;
+          padding: 19px 20px 30px;
 
           .movie__poster {
             margin-bottom: 11px;
@@ -101,9 +104,15 @@
           }
 
           .movie__title {
+            display: inline-block;
             font-weight: 900;
             font-size: 16px;
             line-height: 23px;
+
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           .movie__details {
@@ -145,6 +154,10 @@
         }
 
         .movie__btn {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          //
           display: flex;
           width: 100%;
 
