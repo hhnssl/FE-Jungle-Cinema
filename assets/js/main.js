@@ -3,7 +3,10 @@ const movieListUl = document.getElementById('movie__list');
 const movieBookingBtn = document.getElementById('movie__booking-btn');
 
 function loadItems() {
-  return fetch('/assets/datas.json') //
+  return fetch(
+    // '/assets/datas.json'
+    'https://raw.githubusercontent.com/hhnssl/FE-Jungle-Cinema/main/assets/datas.json'
+  ) //
     .then((res) => res.json())
     .then((json) => displayItems(json));
 }
