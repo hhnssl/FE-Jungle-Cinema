@@ -1,5 +1,6 @@
 const section = document.getElementById('section');
 const movieListUl = document.getElementById('movie__list');
+const movieBookingBtn = document.getElementById('movie__booking-btn');
 
 function loadItems() {
   return fetch('/assets/datas.json') //
@@ -34,8 +35,12 @@ function displayItems(movies) {
         </ul>
     </div>
     <div class="movie__btn">
-      <button class="movie__booking-btn">예매하기</button>
-      <button class="movie__preview_btn">예고편</button>
+      <button id="movie__booking-btn" class="movie__booking-btn">
+        <a href='../assets/html/booking.html'>예매하기</a>
+      </button>
+      <button class="movie__preview_btn">
+        <a href='#'>예고편</a>
+      </button>
     </div>
   </li>
     `;
@@ -45,3 +50,9 @@ function displayItems(movies) {
 }
 
 loadItems();
+
+// 이벤트리스너
+
+// movieBookingBtn.addEventListener('click', () => {
+//   window.location.replace('/booking.html');
+// });

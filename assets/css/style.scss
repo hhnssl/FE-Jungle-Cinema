@@ -90,6 +90,10 @@
         border: 1px solid #bdbdbd;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
         overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
 
         .movie__container {
           min-width: 0;
@@ -144,8 +148,7 @@
                   display: inline-block;
                   width: 14px;
                   height: 14px;
-                  background: url('./assets/images/별점이미지.png') no-repeat
-                    0px 0px;
+                  background: url('../images/별점이미지.png') no-repeat 0px 0px;
                   vertical-align: middle;
                 }
               }
@@ -188,7 +191,7 @@
             display: inline-block;
             width: 14px;
             height: 14px;
-            background: url('./assets/images/아이콘_재생.png') no-repeat 0px 0px;
+            background: url('../images/아이콘_재생.png') no-repeat 0px 0px;
             background-size: contain;
 
             vertical-align: middle;
