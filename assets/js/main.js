@@ -38,7 +38,7 @@ function displayItems(movies) {
     </div>
     <div class="movie__btn">
       <button id="movie__booking-btn" class="movie__booking-btn">
-        <a href='../assets/html/booking.html'>예매하기</a>
+        <a href='assets/html/booking.html'>예매하기</a>
       </button>
       <button class="movie__preview_btn">
         <a href='#'>예고편</a>
