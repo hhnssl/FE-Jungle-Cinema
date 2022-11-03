@@ -2,14 +2,13 @@ const section = document.getElementById('section');
 const movieListUl = document.getElementById('movie__list');
 const movieBookingBtn = document.getElementById('movie__booking-btn');
 
-function loadItems() {
+(function loadItems() {
   return fetch(
-    // '/assets/datas.json'
     'https://raw.githubusercontent.com/hhnssl/FE-Jungle-Cinema/main/assets/datas.json'
   ) //
     .then((res) => res.json())
     .then((json) => displayItems(json));
-}
+})();
 
 function displayItems(movies) {
   movies.map((movie) => {
@@ -52,7 +51,7 @@ function displayItems(movies) {
   });
 }
 
-loadItems();
+// loadItems();
 
 // 이벤트리스너
 
