@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -11,23 +11,109 @@
 
 <body>
   <main class="main" id="main">
-
     <h1>선택한 영화: <strong>정글무비무비</strong></h1>
 
     <ul class="showcase">
       <li>
-        <div class="seat"></div>
-        <small>선택불가</small>
+        <div class="seat selected"></div>
+        <small>선택좌석</small>
       </li>
       <li>
-        <div class="seat selected"></div>
-        <small>선택</small>
+        <div class="seat"></div>
+        <small>선택가능</small>
       </li>
       <li>
         <div class="seat occupied"></div>
         <small>예매완료</small>
       </li>
+      <li>
+        <div class="seat impossible"></div>
+        <small>선택불가</small>
+      </li>
     </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat-title">A</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat-title">B</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat-title">C</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat "></div>
+      </div>
+      <div class="row">
+        <div class="seat-title">D</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat-title">E</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat-title">F</div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat "></div>
+        <div class="seat "></div>
+        <div class="seat "></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      선택 인원: <span id="count">0</span>명
+      <br>
+      총금액: <span id="total">0</span>원
+    </p>
   </main>
 
   <script src="../js/booking.js"></script>
