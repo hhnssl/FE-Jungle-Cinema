@@ -1,6 +1,6 @@
 const section = document.getElementById('section');
 const movieListUl = document.getElementById('movie__list');
-const movieBookingBtn = document.getElementById('movie__booking-btn');
+// let movieTitle = '영화 제목';
 
 (function loadItems() {
   return fetch(
@@ -13,10 +13,10 @@ const movieBookingBtn = document.getElementById('movie__booking-btn');
 function displayItems(movies) {
   movies.map((movie) => {
     const movieItem = `
-  <li class="moive__item">
-    <div class="movie__container">
+  <li id="movieItem" class="moive__item">
+    <div id="movieContainer" class="movie__container">
         <img class="movie__poster" src="${movie.poster}" alt="">
-        <strong class="movie__title">${movie.title}</strong>
+        <strong id="movieTitle" class="movie__title">${movie.title}</strong>
         <ul class="movie__details">
           <li class="details__key">
             개요
@@ -37,7 +37,7 @@ function displayItems(movies) {
         </ul>
     </div>
     <div class="movie__btn">
-      <button id="movie__booking-btn" class="movie__booking-btn">
+      <button id="bookingBtn" class="movie__booking-btn">
         <a href='assets/html/booking.html'>예매하기</a>
       </button>
       <button class="movie__preview_btn">
@@ -49,12 +49,16 @@ function displayItems(movies) {
 
     movieListUl.insertAdjacentHTML('beforeend', movieItem);
   });
+
+  const movieItem = document.querySelectorAll('#movieItem');
+
+  movieItem.forEach((movie) => {
+    const clickedBtn = movie.querySelector('#bookingBtn');
+
+    clickedBtn.addEventListener('click', (e) => {
+      const movieTitle = movie.querySelector('#movieTitle').innerHTML;
+      // 예매하기 클릭시 세션스토리지에 영화제목 저장 (booking.js에서 사용할 것)
+      sessionStorage.setItem('movieTitle', movieTitle);
+    });
+  });
 }
-
-// loadItems();
-
-// 이벤트리스너
-
-// movieBookingBtn.addEventListener('click', () => {
-//   window.location.replace('/booking.html');
-// });
