@@ -1,23 +1,27 @@
 # 정글시네마
 
-### 🔗 배포 URL : https://hhnssl.github.io/FE-Jungle-Cinema/<br><br>
+### 🔗 데모 URL : https://hhnssl.github.io/FE-Jungle-Cinema/<br><br>
 
 ## 1. 개요
+로컬에 있는 데이터를 json 파일로 정리하고 html 문서가 아닌, js 파일에서 동적으로 가져와 영화 목록 페이지를 구성하는 미니 프로젝트입니다.
 
 ## 2. 기술 스택
 
-- HTML5, CSS3, JavaScript, Sass
+HTML5, CSS3, JavaScript
 
-## 3. 프로젝트 구조
+## 3. UI 및 기능
+<div align=center> 
+  ![image](https://user-images.githubusercontent.com/97442475/200104951-4be07ca8-31c3-4a4e-af35-d1ae988c6022.png)
 
-## 4. UI
+  <br>
+  영화 목록 페이지
 
-## 5. 기능
+  ![image](https://user-images.githubusercontent.com/97442475/200104779-c1de5652-8a02-46eb-b60a-2ea8673fee85.png)
+  <br>
+  좌석 선택 페이지
 
-- 트러블 슈팅
+  ![cinema](https://user-images.githubusercontent.com/97442475/200104723-e0947613-1c6f-433e-a102-f1909e0a7926.gif)
 
-* 나랑 비슷한 사례
-  (https://stackoverflow.com/questions/9902803/getelementbyid-where-element-is-dynamically-created-at-runtime)
-  대신에 나는 템플릿리터럴을 사용해서 답변에 해결책이 있는지는 모르겠음 ==>
-  displayItems 밖에 적어놨었다가 안으로 넣어서 해결함. 렌더링 순서와 관련있을 건
-  데 정리해보기
+</div>
+
+
