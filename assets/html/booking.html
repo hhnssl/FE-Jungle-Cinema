@@ -5,115 +5,124 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="../css/booking.css">
   <title>정글 시네마 좌석 선택하기</title>
 </head>
 
 <body>
   <main class="main" id="main">
-    <h1>선택한 영화: <strong>정글무비무비</strong></h1>
+    <h1 id="movieTitle" class="movie-title">영화 제목</h1>
 
-    <ul class="showcase">
-      <li>
-        <div class="seat selected"></div>
-        <small>선택좌석</small>
-      </li>
-      <li>
-        <div class="seat"></div>
-        <small>선택가능</small>
-      </li>
-      <li>
-        <div class="seat occupied"></div>
-        <small>예매완료</small>
-      </li>
-      <li>
-        <div class="seat impossible"></div>
-        <small>선택불가</small>
-      </li>
-    </ul>
+    <div class="wrapper">
+      <ul class="showcase">
+        <li>
+          <div class="seat selected"></div>
+          <small>선택좌석</small>
+        </li>
+        <li>
+          <div class="seat"></div>
+          <small>선택가능</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>예매완료</small>
+        </li>
+        <li>
+          <div class="seat impossible"></div>
+          <small>선택불가</small>
+        </li>
+      </ul>
 
-    <div class="container">
-      <div class="screen"></div>
+      <div class="container">
+        <div class="screen">SCREEN</div>
 
-      <div class="row">
-        <div class="seat-title">A</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+        <div class="row">
+          <div class="seat-title">A</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat-title">B</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat-title">C</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+        </div>
+        <div class="row">
+          <div class="seat-title">D</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat-title">E</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat-title">F</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat "></div>
+          <div class="seat "></div>
+          <div class="seat impossible"></div>
+          <div class="seat impossible"></div>
+        </div>
       </div>
-      <div class="row">
-        <div class="seat-title">B</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat "></div>
-        <div class="seat "></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat-title">C</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat "></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat "></div>
-        <div class="seat "></div>
-      </div>
-      <div class="row">
-        <div class="seat-title">D</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat-title">E</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat-title">F</div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat "></div>
-        <div class="seat "></div>
-        <div class="seat "></div>
-        <div class="seat"></div>
-      </div>
+
+      <p class="text">
+        인원: <span id="count">0</span>명
+        <br>
+        총금액: <span id="total">0</span>원
+      </p>
     </div>
-
-    <p class="text">
-      선택 인원: <span id="count">0</span>명
-      <br>
-      총금액: <span id="total">0</span>원
-    </p>
   </main>
 
   <script src="../js/booking.js"></script>
